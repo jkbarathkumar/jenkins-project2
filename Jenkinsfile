@@ -26,7 +26,7 @@ pipeline {
         stage('Run Tests') {
             steps {
                 // Run tests inside the virtual environment
-                sh '. venv/bin/activate && pytest test/'
+                sh '. venv/bin/activate && PYTHONPATH=$PWD pytest test/'
             }
         }
 
