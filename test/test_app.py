@@ -1,5 +1,5 @@
 # test_app.py
-from main import hello_world
+from app import hello_world
 import pytest
 
 def test_hello_world(capfd):
